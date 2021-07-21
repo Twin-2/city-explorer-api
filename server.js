@@ -11,7 +11,7 @@ const { request } = require('express');
 const app = express();
 dotenv.config();
 app.use(cors());
-
+const PORT = process.env.PORT || 3001;
 
 
 
@@ -37,6 +37,6 @@ app.get('/weather', (req, res) => {
 
 
 //Listen
-app.listen(process.env.PORT, ()=> {
+app.listen(PORT, ()=> {
     console.log('server up!', `on port ${process.env.PORT}`)
 })
