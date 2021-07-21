@@ -1,4 +1,4 @@
-![lab07 - whiteboard](https://user-images.githubusercontent.com/81482156/126547856-1f2dba00-c79b-437b-968e-631963ef9099.png)
+
 # city-explorer-api
 
 
@@ -27,7 +27,7 @@ Thank you to the Code Fellows TA's for helping me trouble shoot!
 ## WhiteBoard:
 
 <img src='https://drive.google.com/file/d/19r2D4jXnU5sUp8rD63QjrTYzzWkriuxt/view?usp=sharing' alt='Whiteboard drawing' style='height: 100px; width:200px'>
-[WhiteBoard drawing](https://drive.google.com/file/d/19r2D4jXnU5sUp8rD63QjrTYzzWkriuxt/view?usp=sharing)
+![lab07 - whiteboard](https://user-images.githubusercontent.com/81482156/126547856-1f2dba00-c79b-437b-968e-631963ef9099.png)
 
 Name of feature: Set up
 
