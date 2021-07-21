@@ -26,7 +26,7 @@ Thank you to the Code Fellows TA's for helping me trouble shoot!
 ## WhiteBoard:
 
 <img src='https://drive.google.com/file/d/19r2D4jXnU5sUp8rD63QjrTYzzWkriuxt/view?usp=sharing' alt='Whiteboard drawing' style='height: 100px; width:200px'>
-[WhiteBoard drawing](https://drive.google.com/file/d/19r2D4jXnU5sUp8rD63QjrTYzzWkriuxt/view?usp=sharing "Whitboard drawing").
+[WhiteBoard drawing](https://drive.google.com/file/d/19r2D4jXnU5sUp8rD63QjrTYzzWkriuxt/view?usp=sharing)
 
 Name of feature: Set up
 
