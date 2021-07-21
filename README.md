@@ -1,3 +1,4 @@
+![lab07 - whiteboard](https://user-images.githubusercontent.com/81482156/126547856-1f2dba00-c79b-437b-968e-631963ef9099.png)
 # city-explorer-api
 
 
