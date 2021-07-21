@@ -23,6 +23,10 @@ Thank you to the Code Fellows TA's for helping me trouble shoot!
 
 # for Code Fellows assignment
 
+## WhiteBoard:
+
+<img src='https://drive.google.com/file/d/19r2D4jXnU5sUp8rD63QjrTYzzWkriuxt/view?usp=sharing' alt='Whiteboard drawing' style='height: 100px; width:200px'>
+
 Name of feature: Set up
 
 Estimate of time needed to complete: 30 minutes
