@@ -5,7 +5,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const weatherData = require('./data/weather.json');
 const cors = require('cors');
-const { request, response } = require('express');
+// const { request, response } = require('express');
 const axios = require('axios');
 
 //Server
@@ -18,7 +18,10 @@ const PORT = process.env.PORT || 3001;
 
 
 // Routes
-app.get('/weather', (req, res) => {
+app.get('/weather', getWeather);
+app.get('/movies', getMovies);
+    
+function getWeather(req,res){
     let lat = req.query.lat;
     let lon = req.query.lon;
     let weatherAPI = `http://api.weatherbit.io/v2.0/forecast/daily?lat=${lat}&lon=${lon}&key=${process.env.WEATHER_API_KEY}`
@@ -40,9 +43,10 @@ app.get('/weather', (req, res) => {
             this.description = description;
         }
     }
-})
+}
 
-app.get('/movies', getMovies);
+
+
 
 function getMovies(req, res)  {
     let searchQuery = req.query.searchQuery
