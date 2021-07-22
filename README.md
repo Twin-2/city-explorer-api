@@ -1,3 +1,4 @@
+
 # city-explorer-api
 
 
@@ -22,6 +23,15 @@ This was built with Javascript using Node and Express.
 Thank you to the Code Fellows TA's for helping me trouble shoot!
 
 # for Code Fellows assignment
+
+## WhiteBoard: 7/20/21
+
+
+![lab07 - whiteboard](https://user-images.githubusercontent.com/81482156/126547956-6182ff0e-1682-434c-a5c0-3d67b8fcabc0.png)
+
+
+
+
 
 Name of feature: Set up
 
@@ -52,3 +62,8 @@ Start time: _____
 Finish time: _____
 
 Actual time needed to complete: ~5 minutes (it turns out I already had this feature working)
+
+
+## WhiteBoard: 7/21/21
+![7-21-21_Whiteboard](https://user-images.githubusercontent.com/81482156/126590553-c8110fb6-3dba-4a64-9baf-951141d8b099.PNG)
+
