@@ -64,6 +64,6 @@ Finish time: _____
 Actual time needed to complete: ~5 minutes (it turns out I already had this feature working)
 
 
-## WhiteBoard: 7/20/21
+## WhiteBoard: 7/21/21
 ![7-21-21_Whiteboard](https://user-images.githubusercontent.com/81482156/126590553-c8110fb6-3dba-4a64-9baf-951141d8b099.PNG)
 
