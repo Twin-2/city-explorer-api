@@ -13,11 +13,17 @@ This is the API for a city explorer app. At this point it will only pull weather
 2. run npm i to get the node modules
 3. You will also need to add a .env file with specified port access to 3333 for this code to run properly. 
 
+## Routes
+- '/movies' sends query to a movie database and returns a list of the top 20 movies for the search area.
+- '/weather' sends a request to a weather database and returns a 16 day forecast fot the search area. 
+
 ## Architecture
 This was built with Javascript using Node and Express.
 
 ## Change Log
-07-20-2001 8:00pm - Application now has a fully-functional express server, with a GET route for the location resource.
+07-20-2021 8:00pm - Server has a route to get weather information from a static local DB.
+
+7-22-2021 8:00pm - Added routes for  live weather updates and a movie list from third party API's.
 
 ## Credit and Collaborations
 Thank you to the Code Fellows TA's for helping me trouble shoot!
