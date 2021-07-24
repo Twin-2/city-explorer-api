@@ -73,3 +73,7 @@ Actual time needed to complete: ~5 minutes (it turns out I already had this feat
 ## WhiteBoard: 7/21/21
 ![7-21-21_Whiteboard](https://user-images.githubusercontent.com/81482156/126590553-c8110fb6-3dba-4a64-9baf-951141d8b099.PNG)
 
+
+## WhiteBoard 7/22/21
+![7-22-21 whiteboard](https://user-images.githubusercontent.com/81482156/126852615-99279269-e794-436b-9f03-307a5deb99d0.PNG)
+
