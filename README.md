@@ -14,8 +14,9 @@ This is the API for a city explorer app. At this point it will only pull weather
 3. You will also need to add a .env file with specified port access to 3333 for this code to run properly. 
 
 ## Routes
-- '/movies' sends query to a movie database and returns a list of the top 20 movies for the search area.
-- '/weather' sends a request to a weather database and returns a 16 day forecast fot the search area. 
+- '/movies' needs a city to searchQuery(any word) phrase paramater in the query to define what movies to look for. sends query to a movie database and returns a list of the top 20 movies based on your search.
+
+- '/weather' needs a lat(latitude) and lon(longitude) passed as query parameters. sends a request to a weather database and returns a 16 day forecast fot the search area. 
 
 ## Architecture
 This was built with Javascript using Node and Express.
