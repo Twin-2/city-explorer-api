@@ -1,38 +1,44 @@
 'use strict'
 
 const axios = require('axios');
+const { response } = require('express');
+const cache = require('./cache');
 
 
-function getMovies(req, res)  {
-    let searchQuery = req.query.searchQuery
-    let url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&language=en-US&query=${searchQuery}&page=1&region=${searchQuery}`
-    axios.get(url)
-        .then(response => {
-            let movieData = response.data.results
-            let sortedMovieData = movieData.sort((a,b) => b.popularity - a.popularity)
-            console.log(sortedMovieData)
-            let movies = []
-            for(let i=0; i<20; i++){
-                movies.push(new Movie(sortedMovieData[i].title, sortedMovieData[i].overview, sortedMovieData[i].vote_count, sortedMovieData[i].poster_path, sortedMovieData[i].popularity, sortedMovieData[i].release_date))
-            }
-            console.log(movies.length)
-            res.send(movies)
-        })
-        .catch(err => {
-            console.log(err)
-            res.status(200).send(err.response.status)
-        })
+function getMovies(searchQuery)  {
+    let url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&language=en-US&query=${searchQuery}&page=1&region=${searchQuery}`;
+    const key = 'movies-'+searchQuery;
+    if(!cache[key]){
+        cache[key] = {};
+        cache[key].timestamp = Date.now();
+        cache[key].data = axios.get(url)
+            .then(response => {
+                let movieData = response.data.results
+                let moviesArray = formatMovieData(movieData);
+                return moviesArray
+            })
+    }
+    return cache[key].data
+}
 
-    class Movie{
-        constructor(title, overview, votes, imageUrl, popularity, releasedOn){
-            this.title = title;
-            this.overview = overview;
-            this.votes = votes;
-            this.imageUrl = imageUrl;
-            this.popularity = popularity;
-            this.releasedOn = releasedOn;
-        }
+function formatMovieData(data) {
+    let sortedMovieData = data.sort((a,b) => b.popularity - a.popularity)
+    let movies = [];
+    for(let i=0; i<20; i++){
+        movies.push(new Movie(sortedMovieData[i]))
+    }
+    return movies
+}
+
+class Movie{
+    constructor(obj){
+        this.title = obj.title;
+        this.overview = obj.overview;
+        this.votes = obj.votes_count;
+        this.imageUrl = obj.poster_path;
+        this.popularity = obj.popularity;
+        this.releasedOn = obj.release_date;
     }
 }
 
-module.exports = getMovies;
+module.exports = getMovies; 
