@@ -3,7 +3,7 @@
 
 
 **Author**: David Whitmore
-**Version**: 1.0.0 
+**Version**: 1.0.3 
 
 ## Overview
 This is the API for a city explorer app. At this point it will only pull weather data for a specific city that it is given.
@@ -24,6 +24,8 @@ This was built with Javascript using Node and Express.
 07-20-2021 8:00pm - Server has a route to get weather information from a static local DB.
 
 7-22-2021 8:00pm - Added routes for  live weather updates and a movie list from third party API's.
+
+7-23/2021 6:00pm - Added a server side cache to store searches and increase front end user speed.
 
 ## Credit and Collaborations
 Thank you to the Code Fellows TA's for helping me trouble shoot!
