@@ -3,7 +3,7 @@
 
 
 **Author**: David Whitmore
-**Version**: 1.0.3 
+**Version**: 1.0.4 
 
 ## Overview
 This is the API for a city explorer app. At this point it will only pull weather data for a specific city that it is given.
@@ -11,7 +11,7 @@ This is the API for a city explorer app. At this point it will only pull weather
 ## Getting Started
 1. Clone the repo
 2. run npm i to get the node modules
-3. You will also need to add a .env file with specified port access to 3333 for this code to run properly. 
+3. You will also need to add a .env file with to add access keys for the two third party API's used; [weatherBit](https://www.weatherbit.io/) and [movieDB](https://developers.themoviedb.org/3/getting-started/introduction). 
 
 ## Routes
 - '/movies' needs a city to searchQuery(any word) phrase paramater in the query to define what movies to look for. sends query to a movie database and returns a list of the top 20 movies based on your search.
@@ -26,7 +26,9 @@ This was built with Javascript using Node and Express.
 
 7-22-2021 8:00pm - Added routes for  live weather updates and a movie list from third party API's.
 
-7-23/2021 6:00pm - Added a server side cache to store searches and increase front end user speed.
+7-23-2021 6:00pm - Added a server side cache to store searches and increase front end user speed.
+
+7-25-2021 6:00pm - Cleaned up code with modularizing the functions and end routes. No new routes added.
 
 ## Credit and Collaborations
 Thank you to the Code Fellows TA's for helping me trouble shoot!
