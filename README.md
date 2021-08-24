@@ -6,7 +6,7 @@
 **Version**: 1.0.4 
 
 ## Overview
-This is the API for a city explorer app. At this point it will only pull weather data for a specific city that it is given.
+This is the API for a city explorer app. At this point it will only pull weather data for a specific city that it is given. Server deployed on Heroku with UI on [Netlify](https://gracious-elion-ed4167.netlify.app/)
 
 ## Getting Started
 1. Clone the repo
